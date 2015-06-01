@@ -1,3 +1,64 @@
+@media all and (min-width: 100px){
+  .headshot{
+    max-width: 100%;
+  }
+  .katlyn{
+    visibility:hidden;
+  }
+  .mobile-headshot{
+    max-width: 100%;
+  }
+}
 
+@media all and (min-width: 960px){
+  .mobile-headshot{
+    visibility: hidden;
+  }
 
+  .katlyn{
+    visibility: visible;
+
+  }
+}
+
+.katlyn{
+  float:left;
+}
+
+.k2{
+  padding-top: 27px;
+}
+
+.lineA, .a2{
+  padding-top: 31px;
+}
+
+.lineA{
+  padding-left:3px;
+}
+
+.t1, .t3{
+  padding-top: 40px;
+  padding-left: 3px;
+}
+
+.l1{
+  padding-left: 5px;
+}
+
+.y1{
+  padding-top: 40px;
+  padding-left: 5px;
+}
+
+.y2{
+  padding-top: 40px;
+  z-index: 1;
+  margin-left: -20px;
+}
+
+.n1, .n2{
+  padding-top: 31px;
+  padding-left: 5px;
+}
 /*# sourceMappingURL=main.css.map */
