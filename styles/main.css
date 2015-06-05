@@ -1,29 +1,108 @@
 @media all and (min-width: 100px){
   .headshot{
-    max-width: 100%;
+    max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    /*top: 0;
+    left: 0;
+    right: 0;*/
+    padding-top: 40px;
+    position: relative;
+    padding-right: none;
+    margin: 0 auto;
+    display: inherit;
   }
+
+  .greeting{
+    /*max-height: 90%;
+    max-width: 90%;
+    position: absolute;
+    /*top: 0;*/
+    position: absolute;
+      /*left: 0;*/
+    right: 0;
+    margin: auto;*/
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 80px;
+  }
+
   .katlyn{
     visibility:hidden;
   }
   .mobile-headshot{
     max-width: 100%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .description{
+    clear: both;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    position: relative;
+  }
+
+   #designer{
+     padding-top: 40px;
+  }
+
+  #developer, #dreamer{
+    padding-top: 18px;
+  }
+
+  .list{
+    text-align:center;
+    padding-top: 53px;
+  }
+
+  .skills{
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 2.1rem;
+    padding-left: 40px;
   }
 }
 
+
+
 @media all and (min-width: 960px){
-  .mobile-headshot{
+  /*.mobile-headshot{
     visibility: hidden;
-  }
+  }*/
 
   .katlyn{
     visibility: visible;
+  }
 
+  /*.headshot{
+    float:left;
+    padding-left: 300px;
+  }*/
+}
+
+@media all and (min-width: 1230px){
+  .headshot{
+    padding-right: 300px;
   }
 }
 
 .katlyn{
   float:left;
 }
+
+/*h1, h2,{
+
+  float: left;
+  text-align: center;
+}*/
+
 
 .k2{
   padding-top: 27px;
