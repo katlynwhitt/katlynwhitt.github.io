@@ -48,9 +48,9 @@
     position: relative;
   }
 
-   #designer{
+   /*#designer{
      padding-top: 40px;
-  }
+  }*/
 
   #developer, #dreamer{
     padding-top: 18px;
@@ -58,19 +58,49 @@
 
   .list{
     text-align:center;
-    padding-top: 53px;
+    padding-top: 20px;
   }
 
   .skills{
     margin: 0 auto;
-    text-align: center;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
-    font-size: 2.1rem;
+    font-size: 1srem;
     padding-left: 40px;
+    padding-top: 5px;
   }
 }
 
+@media all and (min-width: 239px){
+  #dreamer, #developer, #designer{
+    display:block;
+    padding-top: 10 px;
+  }
 
+  .list{
+    padding-top: 10px;
+  }
+}
+
+@media all and (min-width: 401px){
+  .skills{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #dreamer, #developer, #designer{
+    display: inline;
+  }
+
+  .list{
+    padding-top:40px;
+  }
+}
+
+@media all and (min-width: 594px){
+  .skills{
+    font-size: 2.1rem;
+  }
+}
 
 @media all and (min-width: 960px){
   /*.mobile-headshot{
