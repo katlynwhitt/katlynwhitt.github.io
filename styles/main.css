@@ -1,12 +1,12 @@
 @media all and (min-width: 100px){
+  a{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    text-decoration: none;
+  }
+
   .headshot{
     max-height: 90%;
     max-width: 90%;
-    position: absolute;
-    /*top: 0;
-    left: 0;
-    right: 0;*/
-    padding-top: 40px;
     position: relative;
     padding-right: none;
     margin: 0 auto;
@@ -14,12 +14,7 @@
   }
 
   .greeting{
-    /*max-height: 90%;
-    max-width: 90%;
     position: absolute;
-    /*top: 0;*/
-    position: absolute;
-      /*left: 0;*/
     right: 0;
     margin: auto;*/
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -29,66 +24,53 @@
   .katlyn{
     visibility:hidden;
   }
-  .mobile-headshot{
-    max-width: 100%;
-    top: 50%;
-    left: 50%;
+  .mobile-logo{
+    padding-top: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: inherit;
   }
 
   .description{
     clear: both;
     max-height: 100%;
     max-width: 100%;
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    /*position: absolute;*/
+    top: 13px;
     margin: 0 auto;
     position: relative;
   }
 
-   /*#designer{
-     padding-top: 40px;
-  }*/
-
-  #developer, #dreamer{
-    padding-top: 18px;
-  }
-
   .list{
     text-align:center;
-    padding-top: 20px;
+    margin-bottom: 400px;
   }
 
   .skills{
     margin: 0 auto;
+    display: block;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 1srem;
-    padding-left: 40px;
-    padding-top: 5px;
+    padding-top: 12px;
   }
 }
 
 @media all and (min-width: 239px){
-  #dreamer, #developer, #designer{
+  .skills{
     display:block;
-    padding-top: 10 px;
-  }
-
-  .list{
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
 
 @media all and (min-width: 401px){
-  .skills{
+  #developer, a#designer, #dreamer{
     font-size: 1.2rem;
     text-align: center;
+    display: inline;
   }
 
-  #dreamer, #developer, #designer{
-    display: inline;
+  #developer, #dreamer{
+    padding-left: 40px;
   }
 
   .list{
@@ -97,41 +79,26 @@
 }
 
 @media all and (min-width: 594px){
-  .skills{
+  #developer, a#designer, #dreamer{
     font-size: 2.1rem;
   }
 }
 
 @media all and (min-width: 960px){
-  /*.mobile-headshot{
+  .mobile-logo{
     visibility: hidden;
-  }*/
+  }
 
   .katlyn{
     visibility: visible;
   }
-
-  /*.headshot{
-    float:left;
-    padding-left: 300px;
-  }*/
 }
 
-@media all and (min-width: 1230px){
-  .headshot{
-    padding-right: 300px;
-  }
-}
+/*@media all and (min-width: 1230px){*/
 
 .katlyn{
   float:left;
 }
-
-/*h1, h2,{
-
-  float: left;
-  text-align: center;
-}*/
 
 
 .k2{
@@ -169,5 +136,19 @@
 .n1, .n2{
   padding-top: 31px;
   padding-left: 5px;
+}
+
+/*-------*/
+
+.designs-header{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  clear: both;
+  max-height: 100%;
+  max-width: 100%;
+  /*position: absolute;*/
+  top: 13px;
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
 }
 /*# sourceMappingURL=main.css.map */
