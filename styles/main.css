@@ -21,15 +21,10 @@
     font-size: 80px;
   }
 
-  .katlyn{
+  /*.katlyn{
     visibility:hidden;
-  }
-  .mobile-logo{
-    padding-top: 20px;
-    max-width: 80%;
-    margin: 0 auto;
-    display: inherit;
-  }
+  }*/
+
 
   .description{
     clear: both;
@@ -39,6 +34,15 @@
     top: 13px;
     margin: 0 auto;
     position: relative;
+  }
+
+  .logo{
+    padding-top: 20px;
+    /*max-width: 80%;*/
+    margin: 0 auto;
+    width: 400px;
+    height: 100px;
+    /*display: inherit;*/
   }
 
   .list{
@@ -84,26 +88,27 @@
   }
 }
 
-@media all and (min-width: 960px){
-  .mobile-logo{
+/*@media all and (min-width: 960px){*/
+  /*.mobile-logo{
     visibility: hidden;
-  }
+  }*/
 
-  .katlyn{
-    visibility: visible;
-    padding-top: 20px;
+  /*.logo{*/
+    /*visibility: visible;*/
+    /*padding-top: 20px;
     max-width: 80%;
     margin: 0 auto;
     display: inherit;
-  }
-}
+  }*/
+/*}*/
 
 /*@media all and (min-width: 1230px){*/
 
 .katlyn{
   float:left;
+  position: relative;
+  right: -20%;
 }
-
 
 .k2{
   padding-top: 27px;
@@ -124,6 +129,7 @@
 
 .l1{
   padding-left: 5px;
+  /*max-width: 100%;*/
 }
 
 .y1{
@@ -141,6 +147,10 @@
   padding-top: 37px;
   padding-left: 5px;
 }
+
+/*.k1, .k2, .linea, .a2, .t1, .t2, .t3, .l1, .y1, .y2, .n1, .n2{
+
+}*/
 /*
 .n1{
   width: 60.5%;
