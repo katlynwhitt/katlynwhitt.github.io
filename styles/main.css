@@ -112,7 +112,15 @@
 
 .k2{
   padding-top: 27px;
+
 }
+
+.k2:hover{
+  /*animation-duration: 2s;
+  animation-name: explode;*/
+  transform: translate3d(350px, -400px, 0)
+}
+
 
 .lineA, .a2{
   padding-top: 31px;
@@ -148,17 +156,6 @@
   padding-left: 5px;
 }
 
-/*.k1, .k2, .linea, .a2, .t1, .t2, .t3, .l1, .y1, .y2, .n1, .n2{
-
-}*/
-/*
-.n1{
-  width: 60.5%;
-}
-
-.n2{
-  width: 81.5%;
-}*/
 
 /*-------*/
 
@@ -174,3 +171,17 @@
   height: 600px;
 }
 /*# sourceMappingURL=main.css.map */
+
+
+/*@keyframes explode{
+  from {
+  z-index: 1;
+   margin-left: 0%;
+   width: 100%;
+ }
+
+ to {
+   margin-left: 100%;
+   width: 100%;
+ }
+}*/
