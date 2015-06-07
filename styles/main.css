@@ -46,7 +46,7 @@
     margin-bottom: 400px;
   }
 
-  .skills{
+  a#developer, a#dreamer, a#designers{
     margin: 0 auto;
     display: block;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -63,13 +63,13 @@
 }
 
 @media all and (min-width: 401px){
-  #developer, a#designer, #dreamer{
+  a#developer, a#designer, a#dreamer{
     font-size: 1.2rem;
     text-align: center;
     display: inline;
   }
 
-  #developer, #dreamer{
+  a#developer, a#dreamer{
     padding-left: 40px;
   }
 
@@ -79,7 +79,7 @@
 }
 
 @media all and (min-width: 594px){
-  #developer, a#designer, #dreamer{
+  a#developer, a#designer, a#dreamer{
     font-size: 2.1rem;
   }
 }
@@ -91,6 +91,10 @@
 
   .katlyn{
     visibility: visible;
+    padding-top: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: inherit;
   }
 }
 
@@ -114,7 +118,7 @@
 }
 
 .t1, .t3{
-  padding-top: 40px;
+  padding-top: 37px;
   padding-left: 3px;
 }
 
@@ -123,20 +127,28 @@
 }
 
 .y1{
-  padding-top: 40px;
+  padding-top: 37px;
   padding-left: 5px;
 }
 
 .y2{
-  padding-top: 40px;
+  padding-top: 37px;
   z-index: 1;
   margin-left: -20px;
 }
 
 .n1, .n2{
-  padding-top: 31px;
+  padding-top: 37px;
   padding-left: 5px;
 }
+/*
+.n1{
+  width: 60.5%;
+}
+
+.n2{
+  width: 81.5%;
+}*/
 
 /*-------*/
 
