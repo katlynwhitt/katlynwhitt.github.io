@@ -1,32 +1,95 @@
 // $('button').click(function(){
-//
-//   $('.k1').css('transform', 'translate3d(310px, -90px, 0) rotate(360deg)');
-//   $('.k1').css('transition-duration', '1.2s');
-//
-
-
-// var animation = function() {
-//   $('.k1').css('transform', 'translate3d(-197px, -470px, 0)');
-//   $('.k1').css('transition','1.4s').promise().then(function(){
-//     console.log('sup');
-//   });
-// };
-//
-// function animationTwo() {
-//   $('.k1').toggleClass('.k1a');
-// };
-//
-// $.when ( animation() ).done(animationTwo);
 
 var FunctionOne = function () {
   // create a deferred object
   var r = $.Deferred();
   var animation = function() {
-    $('.k1').css('transform', 'translate3d(-197px, -470px, 0)');
-    $('.k1').css('transition','1.4s').promise().then(function(){
+    $('.k1').css({
+      'transform' : 'translate3d(-197px, -470px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
       console.log('sup');
     });
+
+    $('.k2').css({
+      'transform' : 'translate3d(397px, -470px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.lineA').css({
+      'transform' : 'translate3d(375px, -280px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.a2').css({
+      'transform' : 'translate3d(410px, -10px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.t1').css({
+      'transform' : 'translate3d(-450px, -400px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.t2').css({
+      'transform' : 'translate3d(250px, -100px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.t3').css({
+      'transform' : 'translate3d(-300px, -250px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.l1').css({
+      'transform' : 'translate3d(502px, -190px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.y1').css({
+      'transform' : 'translate3d(184px, -390px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.y2').css({
+      'transform' : 'translate3d(-450px, -200px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.n1').css({
+      'transform' : 'translate3d(-440px, -70px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
+    $('.n2').css({
+      'transform' : 'translate3d(-200px, -17px, 0)',
+      'transition' : '1.4s'
+    }).promise().then(function(){
+      console.log('sup');
+    });
+
   };
+
   animation();
 
   // do whatever you want (e.g. ajax/animations other asyc tasks)
@@ -45,47 +108,114 @@ var FunctionTwo = function () {
     var position = $('.k1').position();
     $('.k1').css({
       'position' : 'relative',
-      'top': position.top +'px',
+      'top' : position.top +'px',
       'left' : position.left + 'px',
       '-webkit-animation' : 'spin 10s infinite'
     });
     console.log(position.top);
+
+    var position = $('.k2').position();
+    $('.k2').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 8s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.lineA').position();
+    $('.lineA').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 6s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.a2').position();
+    $('.a2').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 10s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.t1').position();
+    $('.t1').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 13s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.t2').position();
+    $('.t2').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 11s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.t3').position();
+    $('.t3').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 11s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.l1').position();
+    $('.l1').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 12s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.y1').position();
+    $('.y1').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 11s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.y2').position();
+    $('.y2').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 10s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.n1').position();
+    $('.n1').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 10s infinite'
+    });
+    console.log(position.top);
+
+    var position = $('.n2').position();
+    $('.n2').css({
+      'position' : 'relative',
+      'top' : position.top +'px',
+      'left' : position.left + 'px',
+      '-webkit-animation' : 'spin 12s infinite'
+    });
+    console.log(position.top);
+
   };
 
-
-//     (  );
-//     $('.k1').css( 'left' , position.left);
-//     $('.k1').css( '-webkit-animation', 'spin 10s infinite');
-// };
-
-// call FunctionOne and use the `done` method
-// with `FunctionTwo` as it's parameter
 FunctionOne().done(FunctionTwo);
-
-
-
-// animation();
-
-  // $('button').click(function() {
-  //   $( ".k1" ).animate({
-  //     transform: "rotate(360deg) translate3d(-197px, -470px, 0)",
-  //     transition:'1.4s',
-  //     complete: function() {
-  //       $('.k1').css('-webkit-animation', 'spin 10s infinite');
-  //   });
-  // });
-
-// $( ".box" )
-//     .animate( {
-//         height: 20
-//     }, "slow")
-//     .queue( function() {
-//         $( "#title" ).html( "We're in the animation, baby!" );
-//
-//         // This tells jQuery to continue to the next item in the queue
-//         $( this ).dequeue();
-//     } );
-
 
 
 // translate3d(-197px, -470px, 0)
