@@ -1,5 +1,3 @@
-// $('button').click(function(){
-
 var FunctionOne = function () {
   // create a deferred object
   var r = $.Deferred();
@@ -97,7 +95,7 @@ var FunctionOne = function () {
   setTimeout(function () {
     // and call `resolve` on the deferred object, once you're done
     r.resolve();
-  }, 2500);
+  }, 1400);
 
   // return the deferred object
   return r;
@@ -110,7 +108,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 10s infinite'
+      '-webkit-animation' : 'spin 12s infinite'
     });
     console.log(position.top);
 
@@ -119,7 +117,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 8s infinite'
+      '-webkit-animation' : 'spin 16s infinite'
     });
     console.log(position.top);
 
@@ -128,7 +126,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 6s infinite'
+      '-webkit-animation' : 'spin 15s infinite'
     });
     console.log(position.top);
 
@@ -137,7 +135,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 10s infinite'
+      '-webkit-animation' : 'spin 13s infinite'
     });
     console.log(position.top);
 
@@ -146,7 +144,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 13s infinite'
+      '-webkit-animation' : 'spin 14s infinite'
     });
     console.log(position.top);
 
@@ -155,7 +153,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 11s infinite'
+      '-webkit-animation' : 'spin 16s infinite'
     });
     console.log(position.top);
 
@@ -164,7 +162,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 11s infinite'
+      '-webkit-animation' : 'spin 18s infinite'
     });
     console.log(position.top);
 
@@ -182,7 +180,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 11s infinite'
+      '-webkit-animation' : 'spin 14s infinite'
     });
     console.log(position.top);
 
@@ -191,7 +189,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 10s infinite'
+      '-webkit-animation' : 'spin 17s infinite'
     });
     console.log(position.top);
 
@@ -200,7 +198,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 10s infinite'
+      '-webkit-animation' : 'spin 19s infinite'
     });
     console.log(position.top);
 
@@ -215,8 +213,9 @@ var FunctionTwo = function () {
 
   };
 
-FunctionOne().done(FunctionTwo);
-
+$('button').click(function(){
+  FunctionOne().done(FunctionTwo);
+});
 
 // translate3d(-197px, -470px, 0)
 
