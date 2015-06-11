@@ -1,5 +1,9 @@
 @media all and (min-width: 100px){
 
+  a{
+    text-decoration: none;
+  }
+
   a:hover{
     text-decoration: line-through;
 
@@ -114,7 +118,7 @@
   }
 
   .list{
-    padding-top:40px;
+    padding-top:50px;
   }
 
   .designs-header{
@@ -168,14 +172,14 @@
   display: inline;
   position: relative;
   top: -440px;
-  left: -297px;
+  left: -240px;
 }
 
 .about{
   display: inline;
   position: relative;
-  top: -58px;
-  left: 174px
+  top: -70px;
+  left: 234px;
 }
 
 .hiddenAbout{
@@ -189,8 +193,19 @@
 .myDesigns{
   display: inline;
   position: relative;
-  top: -70px;
-  left: -380px;
+  top: -55px;
+  left: -388px;
+}
+
+.hiddenBlog{
+  display:none;
+}
+
+.blog{
+  display: inline;
+  position: relative;
+  top: -265px;
+  left: 230px;
 }
 
 .k1:hover{
@@ -239,6 +254,7 @@
 .n1, .n2{
   padding-top: 37px;
   padding-left: 5px;
+  z-index: 1;
 }
 
 .bang{

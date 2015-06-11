@@ -25,7 +25,8 @@ var FunctionOne = function () {
 
     $('.lineA').css({
       'transform' : 'translate3d(375px, -280px, 0) rotate(360deg)',
-      'transition' : '1.4s'
+      'transition' : '1.4s',
+      'padding-top' : '0'
     }).promise().then(function(){
     });
 
@@ -60,14 +61,14 @@ var FunctionOne = function () {
     });
 
     $('.y1').css({
-      'transform' : 'translate3d(184px, -390px, 0) rotate(-360deg)',
+      'transform' : 'translate3d(-524px, -350px, 0) rotate(-360deg)',
       'transition' : '1.4s'
     }).promise().then(function(){
       console.log('sup');
     });
 
     $('.y2').css({
-      'transform' : 'translate3d(-450px, -200px, 0) rotate(-360deg)',
+      'transform' : 'translate3d(-490px, -220px, 0) rotate(-360deg)',
       'transition' : '1.4s'
     }).promise().then(function(){
       console.log('sup');
@@ -125,13 +126,13 @@ var FunctionTwo = function () {
 
     var position = $('.lineA').position();
     $('.lineA').css({
-      // 'box-shadow': '5px 5px 5px #b28181',
+      'box-shadow': '5px 5px 5px #b28181',
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
       '-webkit-animation' : 'spin 15s infinite'
     });
-    $('.hiddenAbout').removeClass('hiddenAbout').addClass('about');
+    $('.hiddenBlog').removeClass('hiddenBlog').addClass('blog');
 
     var position = $('.a2').position();
     $('.a2').css({
@@ -157,6 +158,7 @@ var FunctionTwo = function () {
       'left' : position.left + 'px',
       '-webkit-animation' : 'spin 16s infinite'
     });
+    $('.hiddenAbout').removeClass('hiddenAbout').addClass('about');
 
     var position = $('.t3').position();
     $('.t3').css({
