@@ -1,8 +1,10 @@
 @media all and (min-width: 100px){
-  a{
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
-    text-decoration: none;
+
+  a:hover{
+    text-decoration: line-through;
+
   }
+
 
   .headshot{
     max-height: 90%;
@@ -11,6 +13,7 @@
     padding-right: none;
     margin: 0 auto;
     display: inherit;
+    /*margin-top: -30px;*/
   }
 
   .greeting{
@@ -37,7 +40,7 @@
   }
 
   .logo{
-    padding-top: 20px;
+    padding-top: 50px;
     /*max-width: 80%;*/
     margin: 0 auto;
     width: 400px;
@@ -45,29 +48,58 @@
     /*display: inherit;*/
   }
 
-  /*.logo-animated{
-    transform: translate3d(350px, -400px, 0)
-  }*/
-
   .list{
     text-align:center;
     margin-bottom: 400px;
   }
 
-  a#developer, a#dreamer, a#designers{
+  a#developer, a#dreamer, a#designer{
     margin: 0 auto;
     display: block;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
-    font-size: 1srem;
+    /*font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;*/
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.3rem;
     padding-top: 12px;
+    color:#8cbea3 ;
+  }
+
+  a#developer:hover{
+    color:#d2b612;
+  }
+  a#dreamer:hover{
+    color:#d2b612;
+  }
+
+  a#designer:hover{
+    color:#d2b612;
+  }
+
+  .designs-header{
+    font-family: 'PT Sans Narrow', sans-serif;
+    clear: both;
+    max-height: 100%;
+    max-width: 100%;
+    /*position: absolute;*/
+    top: 13px;
+    margin: 0 auto;
+    position: relative;
+    height: 600px;
+    color: #b28181;
   }
 }
+
+
 
 @media all and (min-width: 239px){
   .skills{
     display:block;
     padding-top: 20px;
   }
+
+  .designs-header{
+    font-size: 1.8rem;
+  }
+
 }
 
 @media all and (min-width: 401px){
@@ -84,12 +116,22 @@
   .list{
     padding-top:40px;
   }
+
+  .designs-header{
+    font-size: 2rem;
+  }
+
 }
 
 @media all and (min-width: 594px){
   a#developer, a#designer, a#dreamer{
-    font-size: 2.1rem;
+    font-size: 2.8rem;
   }
+  .designs-header{
+    font-size: 3rem;
+    padding-left: 40px;
+  }
+
 }
 
 /*@media all and (min-width: 960px){*/
@@ -114,16 +156,56 @@
   right: -20%;
 }
 
+/*.k1{
+  box-shadow: 5px 5px 5px #b28181;
+}*/
+
+.hiddenContact{
+  display:none;
+}
+
+.contact{
+  display: inline;
+  position: relative;
+  top: -440px;
+  left: -297px;
+}
+
+.about{
+  display: inline;
+  position: relative;
+  top: -58px;
+  left: 174px
+}
+
+.hiddenAbout{
+  display:none;
+}
+
+.hiddenDesign{
+  display:none;
+}
+
+.myDesigns{
+  display: inline;
+  position: relative;
+  top: -70px;
+  left: -380px;
+}
+
+.k1:hover{
+  box-shadow: 5px 10px 10px #d2b612;
+}
+
+/*.contact{
+  position: relative;
+  transform: translate3d(-197px, -470px, 0);
+}*/
+
 .k2{
   padding-top: 27px;
 
 }
-
-/*.k2:hover{*/
-  /*animation-duration: 2s;
-  animation-name: explode;*/
-
-
 
 .lineA, .a2{
   padding-top: 31px;
@@ -159,30 +241,23 @@
   padding-left: 5px;
 }
 
-.k1a{
-  position: relative;
-  top: -470px;
-  left: 200px;
-  transform: translate3d(-197px, -470px, 0px);
-  animation: spin 10s infinite;
-  -webkit-animation: spin 10s;
-
+.bang{
+  background-color: blue;
 }
 
+.together{
+  background-color: pink;
+
+  /*transform : translate3d(-197px, -470px, 0) rotate(360deg);*/
+}
 
 /*-------*/
 
-.designs-header{
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
-  clear: both;
-  max-height: 100%;
-  max-width: 100%;
-  /*position: absolute;*/
-  top: 13px;
-  margin: 0 auto;
-  position: relative;
-  height: 600px;
-}
+
+
+
+
+/*-------Animations-------*/
 
 @-webkit-keyframes spin{
   from { -webkit-transform: rotate(0deg); }
@@ -197,6 +272,40 @@
   from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
+
+@-webkit-keyframes revspin{
+  from { -webkit-transform: rotate(0deg); }
+     to { -webkit-transform: rotate(-360deg); }
+}
+@-moz-keyframes revspin {
+  from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(-360deg); }
+}
+
+@keyframes revspin {
+  from {transform:rotate(0deg);}
+    to {transform:rotate(-360deg);}
+}
+
+
+
+/*________*/
+
+@-webkit-keyframes land{
+  from { -webkit-transform: rotate(0deg); }
+     to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes land {
+  from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@keyframes land {
+  from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
 
 /*.k2{
  /* IE 10+, Fx 29+ */
