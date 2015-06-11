@@ -1,8 +1,13 @@
 var r = $.Deferred();
-var button = $('button');
+// var button = $('.button');
 
-
-
+// $('.button').mouseenter(function(){
+//   $( ".button" ).html( "<a class='button2><img class='button' src='../images/Bang2.png'></a>" );
+// });
+//
+// $('.button2').mouseleave(function(){
+//   $( ".button2" ).html( "<a class='button'><img class='button' src='../images/Bang.png'></a>" );
+// });
 
 var FunctionOne = function () {
   // create a deferred object
@@ -357,20 +362,11 @@ var FunctionTwo = function () {
 //
 // }
 
-$('button').click(function(){
-
+$('.button').click(function(){
+  console.log('hey');
   $('.list').css('display','none');
-  $('button').css('display','none');
+  $('.button').css('display','none');
 
   FunctionOne().done(FunctionTwo);
 
-  //
-  // else if (button.hasClass('together')){
-  //   returnHome().done(returnHome2);
-  //   console.log('in elseif');
-  // }
-  //
-  // else {
-  //   console.log('what is happening');
-  // }
 });

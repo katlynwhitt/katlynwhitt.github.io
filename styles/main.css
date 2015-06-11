@@ -65,36 +65,26 @@
   a#developer, a#dreamer, a#designer{
     margin: 0 auto;
     display: block;
-    /*font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;*/
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.3rem;
     padding-top: 12px;
     color:#8cbea3;
   }
 
-  a#developer:hover{
-    color:#d2b612;
-  }
-  a#dreamer:hover{
+  a#developer:hover, a#dreamer:hover, a#designer:hover{
     color:#d2b612;
   }
 
-  a#designer:hover{
-    color:#d2b612;
-  }
-
-
-  .designs-header{
+  .designs-header, .contact-header, .about-header{
     font-family: 'PT Sans Narrow', sans-serif;
     clear: both;
     max-height: 100%;
     max-width: 100%;
-    /*position: absolute;*/
     top: 13px;
     margin: 0 auto;
     position: relative;
-    height: 600px;
-    color: #b28181;
+    height: 100px;
+    color: #d2b612;
   }
 }
 
@@ -106,7 +96,7 @@
     padding-top: 20px;
   }
 
-  .designs-header{
+  .designs-header, .contact-header, .about-header {
     font-size: 1.8rem;
   }
 
@@ -120,14 +110,14 @@
   }
 
   a#developer, a#dreamer{
-    padding-left: 40px;
+    padding-left  40px;
   }
 
   .list{
     /*padding-top:41px;*/
   }
 
-  .designs-header{
+  .designs-header, .contact-header, .about-header{
     font-size: 2rem;
   }
 
@@ -137,11 +127,15 @@
   a#developer, a#designer, a#dreamer{
     font-size: 2.1rem;
   }
-  .designs-header{
+  .designs-header, .contact-header, .about-header{
     font-size: 3rem;
     padding-left: 40px;
   }
 
+}
+
+.aboutContent, .contactContent, .designsContent{
+  height: 600px;
 }
 
 /*@media all and (min-width: 960px){*/
@@ -165,10 +159,6 @@
   position: relative;
   right: -20%;
 }
-
-/*.k1{
-  box-shadow: 5px 5px 5px #b28181;
-}*/
 
 .hiddenContact{
   display:none;
@@ -218,11 +208,6 @@
   box-shadow: 5px 10px 10px #d2b612;
 }
 
-/*.contact{
-  position: relative;
-  transform: translate3d(-197px, -470px, 0);
-}*/
-
 .k2{
   padding-top: 27px;
 
@@ -267,44 +252,50 @@
   background-color: #d2b612;
 }
 
-/*.together{
-  background-color: pink;
-
-  /*transform : translate3d(-197px, -470px, 0) rotate(360deg);*/
-}*/
-
 /*-------*/
-
-.name{
-  float:right;
-  padding-right: 5px;
-  font-family: 'PT Sans Narrow', sans-serif;
-}
 
 .header{
   font-size: 16px;
   float: right;
-  position:relative;
-  text-align:right;
+  /*position:absolute;*/
+  /*text-align:right;*/
   padding-left: 10px;
   padding-top: 0px;
   /*margin-top: -15px;*/
 }
 
-#headerDreamer{
-  padding-right: 30px;
+.name{
+  font-family: 'PT Sans Narrow', sans-serif;
+  width: 300px;
+  float: right;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+#headerDesigner, #headerDeveloper, #headerDreamer{
+  float: right;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+
+#headerDesigner{
+  padding-left: 30px;
 }
 
 .headerWrapper{
   border-bottom: 1px dotted;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  padding-right: 30px;
+  height: 50px;
+
 }
 
-button{
-  border-radius: 50px;
-  height: 50px;
-  width: 50px;
+.button, .button2{
+  display:inline;
+  float: left;
+  padding-left: 30px;
+  margin-top: -10px;
 }
 
 /*-------Animations-------*/
