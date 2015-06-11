@@ -12,13 +12,13 @@ var FunctionOne = function () {
 
   var animation = function() {
     $('.k1').css({
-      'transform' : 'translate3d(-197px, -470px, 0) rotate(360deg)',
+      'transform' : 'translate3d(-197px, -450px, 0) rotate(360deg)',
       'transition' : '1.4s'
     }).promise().then(function(){
     });
 
     $('.k2').css({
-      'transform' : 'translate3d(397px, -470px, 0) rotate(-360deg)',
+      'transform' : 'translate3d(397px, -440px, 0) rotate(-360deg)',
       'transition' : '1.4s'
     }).promise().then(function(){
     });
@@ -173,7 +173,7 @@ var FunctionTwo = function () {
       'position' : 'relative',
       'top' : position.top +'px',
       'left' : position.left + 'px',
-      '-webkit-animation' : 'spin 12s infinite'
+      '-webkit-animation' : 'spin 9s infinite'
     });
 
     var position = $('.y1').position();
@@ -235,144 +235,142 @@ var FunctionTwo = function () {
 //     }
 // };
 
-var returnHome = function () {
-
-  var position = $('.k1').position()
-    console.log(position);
-
-  $('.k1').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(197px, 470px, 0)'
-    // 'transition' : 'ease-out'
-    // }).promise().then(function(){
-    });
-
-  $('.k2').css({
-    '-webkit-animation' : 'none',
-    // '-webkit-transform': 'translate3d(-397px, 470px, 0) rotate(360deg)',
-    'transform' : 'translate3d(-397px, 470px, 0) rotate(360deg)',
-    // 'transition' : '1.4s'
-  }).promise().then(function(){
-    console.log($('.k2').position());
-  });
-
-  $('.lineA').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(-375px, 280px, 0) rotate(360deg)',
-    // 'transition' : '1.4s'
-  }).promise().then(function(){
-  });
-
-  $('.a2').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(-410px, 10px, 0) rotate(-360deg)',
-    // 'transition' : '1.4s'
-  }).promise().then(function(){
-  });
-
-  $('.t1').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(450px, 400px, 0) rotate(-360deg)',
-    'transition' : '1.4s'
-  }).promise().then(function(){
-  });
-
-  $('.t2').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(-250px, 100px, 0) rotate(360deg)',
-    'transition' : '1.4s'
-  }).promise().then(function(){
-  });
-
-  $('.t3').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(300px, 250px, 0) rotate(360deg)',
-    'transition' : '1.4s'
-  }).promise().then(function(){
-  });
-
-  $('.l1').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(-502px, 190px, 0) rotate(360deg)',
-    'transition' : '1.4s'
-  }).promise().then(function(){
-  });
-
-  $('.y1').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(-184px, 390px, 0) rotate(-360deg)',
-    'transition' : '1.4s'
-  }).promise().then(function(){
-    console.log('sup');
-  });
-
-  $('.y2').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(450px, 200px, 0) rotate(-360deg)',
-    'transition' : '1.4s'
-  }).promise().then(function(){
-    console.log('sup');
-  });
-
-  $('.n1').css({
-
-    'transform' : 'translate3d(440px, 70px, 0) rotate(-360deg)',
-    'transition' : '1.4s',
-    '-webkit-animation' : 'none',
-  }).promise().then(function(){
-
-    console.log('sup');
-  });
-
-  $('.n2').css({
-    '-webkit-animation' : 'none',
-    'transform' : 'translate3d(200px, 17px, 0) rotate(360deg)',
-    'transition' : '1.4s'
-  }).promise().then(function(){
-    console.log('sup');
-  });
-
-
-
-
-  setTimeout(function () {
-    // and call `resolve` on the deferred object, once you're done
-    r.resolve();
-  }, 1400);
-
-  // return the deferred object
-  return r;
-};
-
-var returnHome2 = function () {
-  // var position = $('.k2').position();
-  //   $('.k2').css({
-  // 'position' : 'relative',
-  // 'top' : position.top +'px',
-  // 'left' : position.left + 'px',
-  // '-webkit-animation' : 'revspin 16s infinite'
-// });
-  button.removeClass('together').addClass('bang');
-  // $('.k2').css('-webkit-animation', 'none');
-
-}
+// var returnHome = function () {
+//
+//   var position = $('.k1').position()
+//     console.log(position);
+//
+//   $('.k1').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(197px, 470px, 0)'
+//     // 'transition' : 'ease-out'
+//     // }).promise().then(function(){
+//     });
+//
+//   $('.k2').css({
+//     '-webkit-animation' : 'none',
+//     // '-webkit-transform': 'translate3d(-397px, 470px, 0) rotate(360deg)',
+//     'transform' : 'translate3d(-397px, 470px, 0) rotate(360deg)',
+//     // 'transition' : '1.4s'
+//   }).promise().then(function(){
+//     console.log($('.k2').position());
+//   });
+//
+//   $('.lineA').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(-375px, 280px, 0) rotate(360deg)',
+//     // 'transition' : '1.4s'
+//   }).promise().then(function(){
+//   });
+//
+//   $('.a2').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(-410px, 10px, 0) rotate(-360deg)',
+//     // 'transition' : '1.4s'
+//   }).promise().then(function(){
+//   });
+//
+//   $('.t1').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(450px, 400px, 0) rotate(-360deg)',
+//     'transition' : '1.4s'
+//   }).promise().then(function(){
+//   });
+//
+//   $('.t2').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(-250px, 100px, 0) rotate(360deg)',
+//     'transition' : '1.4s'
+//   }).promise().then(function(){
+//   });
+//
+//   $('.t3').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(300px, 250px, 0) rotate(360deg)',
+//     'transition' : '1.4s'
+//   }).promise().then(function(){
+//   });
+//
+//   $('.l1').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(-502px, 190px, 0) rotate(360deg)',
+//     'transition' : '1.4s'
+//   }).promise().then(function(){
+//   });
+//
+//   $('.y1').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(-184px, 390px, 0) rotate(-360deg)',
+//     'transition' : '1.4s'
+//   }).promise().then(function(){
+//     console.log('sup');
+//   });
+//
+//   $('.y2').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(450px, 200px, 0) rotate(-360deg)',
+//     'transition' : '1.4s'
+//   }).promise().then(function(){
+//     console.log('sup');
+//   });
+//
+//   $('.n1').css({
+//
+//     'transform' : 'translate3d(440px, 70px, 0) rotate(-360deg)',
+//     'transition' : '1.4s',
+//     '-webkit-animation' : 'none',
+//   }).promise().then(function(){
+//
+//     console.log('sup');
+//   });
+//
+//   $('.n2').css({
+//     '-webkit-animation' : 'none',
+//     'transform' : 'translate3d(200px, 17px, 0) rotate(360deg)',
+//     'transition' : '1.4s'
+//   }).promise().then(function(){
+//     console.log('sup');
+//   });
+//
+//
+//
+//
+//   setTimeout(function () {
+//     // and call `resolve` on the deferred object, once you're done
+//     r.resolve();
+//   }, 1400);
+//
+//   // return the deferred object
+//   return r;
+// };
+//
+// var returnHome2 = function () {
+//   // var position = $('.k2').position();
+//   //   $('.k2').css({
+//   // 'position' : 'relative',
+//   // 'top' : position.top +'px',
+//   // 'left' : position.left + 'px',
+//   // '-webkit-animation' : 'revspin 16s infinite'
+// // });
+//   button.removeClass('together').addClass('bang');
+//   // $('.k2').css('-webkit-animation', 'none');
+//
+// }
 
 $('button').click(function(){
 
   $('.list').css('display','none');
+  $('button').css('display','none');
 
-  if (button.hasClass('bang')) {
-    FunctionOne().done(FunctionTwo);
-    console.log('in function');
-    button.removeClass('bang').addClass('together');
-  }
+  FunctionOne().done(FunctionTwo);
 
-  else if (button.hasClass('together')){
-    returnHome().done(returnHome2);
-    console.log('in elseif');
-  }
-
-  else {
-    console.log('what is happening');
-  }
+  //
+  // else if (button.hasClass('together')){
+  //   returnHome().done(returnHome2);
+  //   console.log('in elseif');
+  // }
+  //
+  // else {
+  //   console.log('what is happening');
+  // }
 });

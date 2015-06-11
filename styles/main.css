@@ -1,5 +1,6 @@
 @media all and (min-width: 100px){
 
+
   a{
     text-decoration: none;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -13,13 +14,13 @@
 
 
   .headshot{
-    max-height: 90%;
-    max-width: 90%;
+    max-height: 50%;
+    max-width: 50%;
     position: relative;
     padding-right: none;
     margin: 0 auto;
     display: inherit;
-    /*margin-top: -30px;*/
+    margin-top: -15px;
   }
 
   .greeting{
@@ -43,6 +44,7 @@
     top: 13px;
     margin: 0 auto;
     position: relative;
+    padding-bottom: 400px;
   }
 
   .logo{
@@ -57,6 +59,7 @@
   .list{
     text-align:center;
     margin-bottom: 10px;
+    padding-top: 40px;
   }
 
   a#developer, a#dreamer, a#designer{
@@ -66,7 +69,7 @@
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1.3rem;
     padding-top: 12px;
-    color:#8cbea3 ;
+    color:#8cbea3;
   }
 
   a#developer:hover{
@@ -79,6 +82,7 @@
   a#designer:hover{
     color:#d2b612;
   }
+
 
   .designs-header{
     font-family: 'PT Sans Narrow', sans-serif;
@@ -173,7 +177,7 @@
 .contact{
   display: inline;
   position: relative;
-  top: -440px;
+  top: -420px;
   left: -270px;
 }
 
@@ -260,20 +264,48 @@
 }
 
 .bang{
-  background-color: blue;
+  background-color: #d2b612;
 }
 
-.together{
+/*.together{
   background-color: pink;
 
   /*transform : translate3d(-197px, -470px, 0) rotate(360deg);*/
-}
+}*/
 
 /*-------*/
 
+.name{
+  float:right;
+  padding-right: 5px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 
+.header{
+  font-size: 16px;
+  float: right;
+  position:relative;
+  text-align:right;
+  padding-left: 10px;
+  padding-top: 0px;
+  /*margin-top: -15px;*/
+}
 
+#headerDreamer{
+  padding-right: 30px;
+}
 
+.headerWrapper{
+  border-bottom: 1px dotted;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+button{
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
 
 /*-------Animations-------*/
 
@@ -305,23 +337,6 @@
     to {transform:rotate(-360deg);}
 }
 
-
-
-/*________*/
-
-@-webkit-keyframes land{
-  from { -webkit-transform: rotate(0deg); }
-     to { -webkit-transform: rotate(360deg); }
-}
-@-moz-keyframes land {
-  from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-
-@keyframes land {
-  from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
-}
 
 
 
