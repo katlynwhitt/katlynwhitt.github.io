@@ -1,5 +1,63 @@
 @media all and (min-width: 100px){
 
+  .mobile-logo{
+    display: block;
+    padding-top: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+
+  .button{
+    display: none;
+  }
+
+  .logo{
+    display:none;
+  }
+
+  .header{
+    font-size: 16px;
+    float: right;
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+
+  .name{
+    font-family: 'PT Sans Narrow', sans-serif;
+    /*width: 300px;*/
+    float: right;
+    margin-top: -3px;
+    /*text-align: right;*/
+    font-size: 1.2rem;
+    /*padding-left: 10px;*/
+  }
+
+  #headerDesigner, #headerDeveloper, #headerDreamer{
+    float:right;
+  }
+
+  /*#headerDesigner{
+    padding-left: 30px;
+  }*/
+
+  .headerWrapper{
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-right: 30px;
+    height: 50px;
+
+  }
+
+  .button, .button2{
+    display:inline;
+    float: left;
+    padding-left: 30px;
+    margin-top: -10px;
+    display:none;
+  }
+
 
   a{
     text-decoration: none;
@@ -31,11 +89,6 @@
     font-size: 80px;
   }
 
-  /*.katlyn{
-    visibility:hidden;
-  }*/
-
-
   .description{
     clear: both;
     max-height: 100%;
@@ -47,20 +100,7 @@
     padding-bottom: 400px;
   }
 
-  .logo{
-    padding-top: 30px;
-    /*max-width: 80%;*/
-    margin: 0 auto;
-    width: 400px;
-    height: 100px;
-    /*display: inherit;*/
-  }
 
-  .list{
-    text-align:center;
-    margin-bottom: 10px;
-    padding-top: 40px;
-  }
 
   a#developer, a#dreamer, a#designer{
     margin: 0 auto;
@@ -83,21 +123,18 @@
     top: 13px;
     margin: 0 auto;
     position: relative;
-    height: 100px;
+    height: 50px;
     color: #d2b612;
   }
-}
 
 
+  .designs-header, .contact-header, .about-header{
+    /*font-size: 3rem;*/
+    padding-top: 30px;
+    position:relative;
+    text-align: center;
 
-@media all and (min-width: 239px){
-  .skills{
-    display:block;
-    padding-top: 20px;
-  }
-
-  .designs-header, .contact-header, .about-header {
-    font-size: 1.8rem;
+  /*background*/
     background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -107,9 +144,52 @@
     background-size: 3px 3px;
   }
 
+  .aboutContent, .contactContent, .designsContent{
+  height: 600px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 40px;
+
+  }
+
+}
+
+
+@media all and (min-width: 239px){
+  .skills{
+    display:block;
+    padding-top: 20px;
+  }
+
+  .designs-header, .contact-header, .about-header {
+    font-size: 2rem;
+    height:70px;
+  }
+
 }
 
 @media all and (min-width: 401px){
+
+  .brain{
+    padding-top: 50px;
+    max-width: 100%;
+  }
+
+  .leftBrain{
+    margin-top: 0;
+  }
+
+  #headerDesigner, #headerDeveloper, #headerDreamer{
+    float: right;
+    padding-left: 15px;
+    font-size: 1.2rem;
+  }
+
+  #headerDesigner{
+    padding-left: 30px;
+  }
+
   a#developer, a#designer, a#dreamer{
     font-size: 1.2rem;
     text-align: center;
@@ -126,11 +206,40 @@
 
   .designs-header, .contact-header, .about-header{
     font-size: 2rem;
+    height: 100px;
+    padding-top: 50px;
+    /*padding-bottom: 40px;*/
   }
 
 }
 
-@media all and (min-width: 594px){
+
+@media all and (min-width: 894px){
+
+  .button{
+    display: inline;
+  }
+
+  .mobile-logo{
+    display:none;
+  }
+
+  .logo{
+    display: block;
+    padding-top: 30px;
+    /*max-width: 80%;*/
+    margin: 0 auto;
+    width: 400px;
+    height: 100px;
+    /*display: inherit;*/
+  }
+
+  .list{
+    text-align:center;
+    margin-bottom: 10px;
+    padding-top: 40px;
+  }
+
   a#developer, a#designer, a#dreamer{
     font-size: 2.1rem;
   }
@@ -140,57 +249,41 @@
     padding-top: 50px;
     position:relative;
     text-align: center;
-    height: 100px;
-
-/*background*/
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-    -webkit-background-size: 3px 3px;
-    -moz-background-size: 3px 3px;
-    background-size: 3px 3px;
+    padding-bottom: 40px;
+    /*height: 100px;*/
   }
 
-  /*.designs-header:before, .contact-header:before, .about-header:before,.designs-header:after, .contact-header:after, .about-header:after{
-    position: absolute;
-    top: 51%;
-    overflow: hidden;
-    width: 50%;
-    height: 1px;
-    content: '\a0';
-    background-color: #8cbea3;
-}
-
-.designs-header:before, .contact-header:before, .about-header:before {
-    margin-left: -50%;
-    text-align: right;
-}*/
-
 .aboutContent, .contactContent, .designsContent{
-  height: 600px;
+  height: 800px;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.3rem;
   text-align: center;
+  padding-top: 80px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.leftBrainContent-Title, .rightBrainContent-Title{
+  font-size: 1.7rem;
+  padding-bottom: 8px;
+}
+
+.leftBrainContent{
   padding-top: 40px;
+  width: 300px;
+  float:left;
+  /*position: absolute;*/
+  height: 500px;
 
 }
 
-/*@media all and (min-width: 960px){*/
-  /*.mobile-logo{
-    visibility: hidden;
-  }*/
-
-  /*.logo{*/
-    /*visibility: visible;*/
-    /*padding-top: 20px;
-    max-width: 80%;
-    margin: 0 auto;
-    display: inherit;
-  }*/
-/*}*/
-
-/*@media all and (min-width: 1230px){*/
+.rightBrainContent{
+  padding-top: 40px;
+  width: 300px;
+  float:right;
+  /*position: absolute;*/
+  height: 500px;
+}
 
 .katlyn{
   float:left;
@@ -266,7 +359,6 @@
 
 .l1{
   padding-left: 5px;
-  /*max-width: 100%;*/
 }
 
 .y1{
@@ -292,49 +384,6 @@
 
 /*-------*/
 
-.header{
-  font-size: 16px;
-  float: right;
-  /*position:absolute;*/
-  /*text-align:right;*/
-  padding-left: 10px;
-  padding-top: 0px;
-  /*margin-top: -15px;*/
-}
-
-.name{
-  font-family: 'PT Sans Narrow', sans-serif;
-  width: 300px;
-  float: right;
-  text-align: right;
-  font-size: 1.2rem;
-}
-
-#headerDesigner, #headerDeveloper, #headerDreamer{
-  float: right;
-  padding-left: 15px;
-  font-size: 1.2rem;
-}
-
-#headerDesigner{
-  padding-left: 30px;
-}
-
-.headerWrapper{
-  border-bottom: 1px dotted;
-  padding-bottom: 5px;
-  padding-top: 30px;
-  padding-right: 30px;
-  height: 50px;
-
-}
-
-.button, .button2{
-  display:inline;
-  float: left;
-  padding-left: 30px;
-  margin-top: -10px;
-}
 
 /*-------Animations-------*/
 
@@ -366,7 +415,7 @@
     to {transform:rotate(-360deg);}
 }
 
-
+}
 
 
 /*.k2{
