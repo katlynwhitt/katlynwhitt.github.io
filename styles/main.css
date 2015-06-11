@@ -98,6 +98,13 @@
 
   .designs-header, .contact-header, .about-header {
     font-size: 1.8rem;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
   }
 
 }
@@ -127,15 +134,46 @@
   a#developer, a#designer, a#dreamer{
     font-size: 2.1rem;
   }
+
   .designs-header, .contact-header, .about-header{
     font-size: 3rem;
-    padding-left: 40px;
+    padding-top: 50px;
+    position:relative;
+    text-align: center;
+    height: 100px;
+
+/*background*/
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
   }
 
+  /*.designs-header:before, .contact-header:before, .about-header:before,.designs-header:after, .contact-header:after, .about-header:after{
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: #8cbea3;
 }
+
+.designs-header:before, .contact-header:before, .about-header:before {
+    margin-left: -50%;
+    text-align: right;
+}*/
 
 .aboutContent, .contactContent, .designsContent{
   height: 600px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 40px;
+
 }
 
 /*@media all and (min-width: 960px){*/
