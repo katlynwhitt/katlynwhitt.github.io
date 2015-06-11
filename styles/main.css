@@ -2,6 +2,8 @@
 
   a{
     text-decoration: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #cb654f;
   }
 
   a:hover{
@@ -44,7 +46,7 @@
   }
 
   .logo{
-    padding-top: 50px;
+    padding-top: 30px;
     /*max-width: 80%;*/
     margin: 0 auto;
     width: 400px;
@@ -54,7 +56,7 @@
 
   .list{
     text-align:center;
-    margin-bottom: 400px;
+    margin-bottom: 10px;
   }
 
   a#developer, a#dreamer, a#designer{
@@ -118,7 +120,7 @@
   }
 
   .list{
-    padding-top:50px;
+    /*padding-top:41px;*/
   }
 
   .designs-header{
@@ -129,7 +131,7 @@
 
 @media all and (min-width: 594px){
   a#developer, a#designer, a#dreamer{
-    font-size: 2.8rem;
+    font-size: 2.1rem;
   }
   .designs-header{
     font-size: 3rem;
@@ -172,7 +174,7 @@
   display: inline;
   position: relative;
   top: -440px;
-  left: -240px;
+  left: -270px;
 }
 
 .about{

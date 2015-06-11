@@ -359,6 +359,8 @@ var returnHome2 = function () {
 
 $('button').click(function(){
 
+  $('.list').css('display','none');
+
   if (button.hasClass('bang')) {
     FunctionOne().done(FunctionTwo);
     console.log('in function');
