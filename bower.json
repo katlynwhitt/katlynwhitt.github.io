@@ -1,0 +1,22 @@
+{
+  "name": "Portfolio",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/katlynwhitt/katlynwhitt.github.io",
+  "authors": [
+    "Katlyn Whittenburg <katlynwhittenburg@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,5 +1,17 @@
 @media all and (min-width: 100px){
 
+  .button-img{
+    position: absolute;
+    padding-left: 70px;
+    margin-top: -35px;
+    visibility: hidden;
+  }
+
+  .twitterLink, .email, .pinterest-link{
+    display:block;
+    padding-top: 20px;
+  }
+
   .mobile-logo{
     display: block;
     padding-top: 30px;
@@ -27,19 +39,15 @@
     font-family: 'PT Sans Narrow', sans-serif;
     /*width: 300px;*/
     float: right;
-    margin-top: -3px;
+    /*margin-top: -3px;*/
     /*text-align: right;*/
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     /*padding-left: 10px;*/
   }
 
   #headerDesigner, #headerDeveloper, #headerDreamer{
     float:right;
   }
-
-  /*#headerDesigner{
-    padding-left: 30px;
-  }*/
 
   .headerWrapper{
     border-bottom: 1px dotted;
@@ -49,15 +57,6 @@
     height: 50px;
 
   }
-
-  .button, .button2{
-    display:inline;
-    float: left;
-    padding-left: 30px;
-    margin-top: -10px;
-    display:none;
-  }
-
 
   a{
     text-decoration: none;
@@ -70,7 +69,6 @@
 
   }
 
-
   .headshot{
     max-height: 50%;
     max-width: 50%;
@@ -78,7 +76,7 @@
     padding-right: none;
     margin: 0 auto;
     display: inherit;
-    margin-top: -15px;
+    padding-top: 10px;
   }
 
   .greeting{
@@ -93,7 +91,6 @@
     clear: both;
     max-height: 100%;
     max-width: 100%;
-    /*position: absolute;*/
     top: 13px;
     margin: 0 auto;
     position: relative;
@@ -122,14 +119,11 @@
     max-width: 100%;
     top: 13px;
     margin: 0 auto;
-    position: relative;
     height: 50px;
     color: #d2b612;
   }
 
-
   .designs-header, .contact-header, .about-header{
-    /*font-size: 3rem;*/
     padding-top: 30px;
     position:relative;
     text-align: center;
@@ -145,16 +139,71 @@
   }
 
   .aboutContent, .contactContent, .designsContent{
-  height: 600px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 1.3rem;
-  text-align: center;
-  padding-top: 40px;
+    height: 800px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 40px;
+  }
 
+  .contactContent{
+    height: 300px;
   }
 
 }
+  .about-text-2{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 270px;
+  }
 
+  .leftBrain, .rightBrain{
+    width: 50px;
+    padding-top: 10px;
+  }
+
+  .leftBrainContent-Title, .rightBrainContent-Title{
+    font-size: 1.2rem;
+  }
+
+  .leftBrainContent, .rightBrainContent{
+    font-size: .5rem;
+    height: 150px;
+    width: 100px;
+    float: left;
+  }
+
+  .rightBrainContent{
+    float: right;
+    width: 120px;
+  }
+  .brain{
+    height: 100px;
+  }
+
+  a.contact-me-2{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .footer{
+    max-width: 100%;
+    border-top: dotted black 2px;
+  }
+
+  .built-by{
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: black;
+    float:right;
+    padding-top: 40px;
+    padding-bottom: 200px;
+    font-size: 1.3rem;
+    padding-right: 50px;
+  }
+
+}
 
 @media all and (min-width: 239px){
   .skills{
@@ -169,15 +218,29 @@
 
 }
 
+
+@media all and (min-width: 281px){
+  .leftBrain, .rightBrain{
+    padding-top: 30px;
+    width: 100px;
+  }
+
+  .name{
+    margin-top: -3px;
+  }
+}
+
+
 @media all and (min-width: 401px){
 
   .brain{
-    padding-top: 50px;
+    padding-top: 10px;
     max-width: 100%;
   }
 
-  .leftBrain{
-    margin-top: 0;
+  .aboutText{
+  font-size: 1.4rem;
+  padding-top: 20px;
   }
 
   #headerDesigner, #headerDeveloper, #headerDreamer{
@@ -211,209 +274,265 @@
     /*padding-bottom: 40px;*/
   }
 
+  .rightBrainContent, .leftBrainContent{
+    font-size: 1rem;
+  }
 }
 
+@media all and (min-width: 505px){
+  .rightBrainContent{
+    padding-right: 30px;
+  }
+
+  .leftBrainContent{
+    padding-left: 30px;
+  }
+}
+
+@media all and (min-width: 608px){
+  .rightBrainContent{
+    padding-right: 80px;
+  }
+
+  .leftBrainContent{
+    padding-left: 80px;
+  }
+
+}
 
 @media all and (min-width: 894px){
 
   .button{
-    display: inline;
-  }
-
-  .mobile-logo{
-    display:none;
-  }
-
-  .logo{
     display: block;
-    padding-top: 30px;
-    /*max-width: 80%;*/
-    margin: 0 auto;
-    width: 400px;
-    height: 100px;
-    /*display: inherit;*/
+    position: absolute;
+    padding-left: 117px;
+    padding-top: 0px;
+    z-index: 1;
+    font-size: 1.2rem;
   }
 
-  .list{
-    text-align:center;
-    margin-bottom: 10px;
-    padding-top: 40px;
+    .mobile-logo{
+      display:none;
+    }
+
+    .logo{
+      display: block;
+      padding-top: 30px;
+      /*max-width: 80%;*/
+      margin: 0 auto;
+      width: 400px;
+      height: 100px;
+      /*display: inherit;*/
+    }
+
+    .list{
+      text-align:center;
+      margin-bottom: 10px;
+      padding-top: 40px;
+    }
+
+    a#developer, a#designer, a#dreamer{
+      font-size: 2.1rem;
+    }
+
+    .designs-header, .contact-header, .about-header{
+      font-size: 3rem;
+      padding-top: 50px;
+      position:relative;
+      text-align: center;
+      padding-bottom: 40px;
+      /*height: 100px;*/
+    }
+
+    .aboutContent, .contactContent, .designsContent{
+      height: 800px;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 1.3rem;
+      text-align: center;
+      padding-top: 10px;
+      width: 900px;
+      margin: 0 auto;
+    }
+
+
+    .contactContent{
+      height: 300px;
+    }
+
+    .aboutText{
+      font-size: 1.8rem;
+    }
+
+    .leftBrainContent-Title, .rightBrainContent-Title{
+      font-size: 1.7rem;
+      padding-bottom: 10px;
+    }
+
+    .leftBrainContent{
+      /*padding-top: 40px;*/
+      width: 300px;
+      float:left;
+      /*position: absolute;*/
+      height: 200px;
+      font-size: 1.2rem;
+
+    }
+
+    .rightBrainContent{
+      /*padding-top: 40px;*/
+      width: 300px;
+      float:right;
+      /*position: absolute;*/
+      height: 200px;
+      font-size: 1.2rem;
+    }
+
+    .brain{
+      width:300px;
+      margin: 0 auto;
+      clear:both;
+      height: 70px;
+    }
+
+    .leftBrain,{
+      width:101px;
+    }
+
+    .rightBrain{
+      width: 104px;
+    }
+
+    .katlyn{
+      float:left;
+      position: relative;
+      right: -20%;
+    }
+
+    .hiddenContact{
+      display:none;
+    }
+
+    .contact{
+      display: inline;
+      position: relative;
+      top: -420px;
+      left: -270px;
+    }
+
+    .about{
+      display: inline;
+      position: relative;
+      top: -70px;
+      left: 234px;
+    }
+
+    .hiddenAbout{
+      display:none;
+    }
+
+    .hiddenDesign{
+      display:none;
+    }
+
+    .myDesigns{
+      display: inline;
+      position: relative;
+      top: -55px;
+      left: -388px;
+    }
+
+    .hiddenBlog{
+      display:none;
+    }
+
+    .blog{
+      display: inline;
+      position: relative;
+      top: -265px;
+      left: 230px;
+    }
+
+    .k1:hover{
+      box-shadow: 5px 10px 10px #d2b612;
+    }
+
+    .k2{
+      padding-top: 27px;
+
+    }
+
+    .lineA, .a2{
+      padding-top: 31px;
+    }
+
+    .lineA{
+      padding-left:3px;
+    }
+
+    .t1, .t3{
+      padding-top: 37px;
+      padding-left: 3px;
+    }
+
+    .l1{
+      padding-left: 5px;
+    }
+
+    .y1{
+      padding-top: 37px;
+      padding-left: 5px;
+    }
+
+    .y2{
+      padding-top: 37px;
+      z-index: 1;
+      margin-left: -20px;
+    }
+
+    .n1, .n2{
+      padding-top: 37px;
+      padding-left: 5px;
+      z-index: 1;
+    }
+
+    .bang{
+      background-color: #d2b612;
+    }
+
+
+
+  /*-------*/
+
+
+  /*-------Animations-------*/
+
+  @-webkit-keyframes spin{
+    from { -webkit-transform: rotate(0deg); }
+       to { -webkit-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+      to { -moz-transform: rotate(360deg); }
   }
 
-  a#developer, a#designer, a#dreamer{
-    font-size: 2.1rem;
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+      to {transform:rotate(360deg);}
   }
 
-  .designs-header, .contact-header, .about-header{
-    font-size: 3rem;
-    padding-top: 50px;
-    position:relative;
-    text-align: center;
-    padding-bottom: 40px;
-    /*height: 100px;*/
+  @-webkit-keyframes revspin{
+    from { -webkit-transform: rotate(0deg); }
+       to { -webkit-transform: rotate(-360deg); }
+  }
+  @-moz-keyframes revspin {
+    from { -moz-transform: rotate(0deg); }
+      to { -moz-transform: rotate(-360deg); }
   }
 
-.aboutContent, .contactContent, .designsContent{
-  height: 800px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 1.3rem;
-  text-align: center;
-  padding-top: 80px;
-  width: 900px;
-  margin: 0 auto;
-}
-
-.leftBrainContent-Title, .rightBrainContent-Title{
-  font-size: 1.7rem;
-  padding-bottom: 8px;
-}
-
-.leftBrainContent{
-  padding-top: 40px;
-  width: 300px;
-  float:left;
-  /*position: absolute;*/
-  height: 500px;
-
-}
-
-.rightBrainContent{
-  padding-top: 40px;
-  width: 300px;
-  float:right;
-  /*position: absolute;*/
-  height: 500px;
-}
-
-.katlyn{
-  float:left;
-  position: relative;
-  right: -20%;
-}
-
-.hiddenContact{
-  display:none;
-}
-
-.contact{
-  display: inline;
-  position: relative;
-  top: -420px;
-  left: -270px;
-}
-
-.about{
-  display: inline;
-  position: relative;
-  top: -70px;
-  left: 234px;
-}
-
-.hiddenAbout{
-  display:none;
-}
-
-.hiddenDesign{
-  display:none;
-}
-
-.myDesigns{
-  display: inline;
-  position: relative;
-  top: -55px;
-  left: -388px;
-}
-
-.hiddenBlog{
-  display:none;
-}
-
-.blog{
-  display: inline;
-  position: relative;
-  top: -265px;
-  left: 230px;
-}
-
-.k1:hover{
-  box-shadow: 5px 10px 10px #d2b612;
-}
-
-.k2{
-  padding-top: 27px;
-
-}
-
-.lineA, .a2{
-  padding-top: 31px;
-}
-
-.lineA{
-  padding-left:3px;
-}
-
-.t1, .t3{
-  padding-top: 37px;
-  padding-left: 3px;
-}
-
-.l1{
-  padding-left: 5px;
-}
-
-.y1{
-  padding-top: 37px;
-  padding-left: 5px;
-}
-
-.y2{
-  padding-top: 37px;
-  z-index: 1;
-  margin-left: -20px;
-}
-
-.n1, .n2{
-  padding-top: 37px;
-  padding-left: 5px;
-  z-index: 1;
-}
-
-.bang{
-  background-color: #d2b612;
-}
-
-/*-------*/
-
-
-/*-------Animations-------*/
-
-@-webkit-keyframes spin{
-  from { -webkit-transform: rotate(0deg); }
-     to { -webkit-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
-}
-
-@-webkit-keyframes revspin{
-  from { -webkit-transform: rotate(0deg); }
-     to { -webkit-transform: rotate(-360deg); }
-}
-@-moz-keyframes revspin {
-  from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(-360deg); }
-}
-
-@keyframes revspin {
-  from {transform:rotate(0deg);}
-    to {transform:rotate(-360deg);}
-}
+  @keyframes revspin {
+    from {transform:rotate(0deg);}
+      to {transform:rotate(-360deg);}
+  }
 
 }
 

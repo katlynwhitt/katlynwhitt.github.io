@@ -1,6 +1,5 @@
 'use strict';
 
-
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
   sass = require('gulp-sass');
