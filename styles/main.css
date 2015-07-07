@@ -1,5 +1,10 @@
 @media all and (min-width: 100px){
 
+  body{
+    margin: 0;
+
+  }
+
   .button-img{
     position: absolute;
     padding-left: 70px;
@@ -36,12 +41,17 @@
   }
 
   .name{
-    font-family: 'PT Sans Narrow', sans-serif;
+    color:white;
     /*width: 300px;*/
     float: right;
     /*margin-top: -3px;*/
     /*text-align: right;*/
     font-size: 1.4rem;
+     font-size: 20pt;
+     font-weight: normal;
+     line-height: 34pt;
+     text-transform: uppercase;
+     font-family: "futura-pt-condensed";
     /*padding-left: 10px;*/
   }
 
@@ -50,17 +60,17 @@
   }
 
   .headerWrapper{
-    border-bottom: 1px dotted;
+    /*border-bottom: 1px dotted;*/
     padding-bottom: 5px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-right: 30px;
     height: 50px;
-
+    background-color:rgba(33,33,33,0.9);
   }
 
   a{
     text-decoration: none;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'futura-pt-condensed';
     color: #cb654f;
   }
 
@@ -76,7 +86,8 @@
     padding-right: none;
     margin: 0 auto;
     display: inherit;
-    padding-top: 10px;
+    padding-top: 30px;
+
   }
 
   .greeting{
@@ -94,26 +105,32 @@
     top: 13px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 400px;
+    padding-bottom: 90px;
+    /*background-color: rgba(33,33,33,0.1);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background-image: url('../../images/background-circle.png');
+    background-size:auto;
+    background-position: top;
+    margin-top: -14px;
+    /*background-color: #ddecdf;*/
   }
-
-
 
   a#developer, a#dreamer, a#designer{
     margin: 0 auto;
     display: block;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: "futura-pt-condensed";
     font-size: 1.3rem;
     padding-top: 12px;
-    color:#8cbea3;
   }
 
   a#developer:hover, a#dreamer:hover, a#designer:hover{
-    color:#d2b612;
+    color:gray;
   }
 
   .designs-header, .contact-header, .about-header{
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'futura-pt-condensed', sans-serif;
     clear: both;
     max-height: 100%;
     max-width: 100%;
@@ -140,7 +157,7 @@
 
   .aboutContent, .contactContent, .designsContent{
     height: 800px;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'futura-pt-condensed', sans-serif;
     font-size: 1.3rem;
     text-align: center;
     padding-top: 40px;
@@ -148,6 +165,10 @@
 
   .contactContent{
     height: 300px;
+  }
+
+  .contact-header{
+    margin-top: -14px;
   }
 
 }
@@ -188,19 +209,28 @@
     margin-top: 15px;
   }
 
+  .designsContent{
+    background-color:#8cbea3;
+  }
+
   .footer{
     max-width: 100%;
+    width: 100%;
     border-top: dotted black 2px;
+    height: 80px;
+    background-color: rgba(33,33,33,0.9);
+    padding-bottom: 20px;
   }
 
   .built-by{
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'futura-pt-condensed', sans-serif;
     color: black;
     float:right;
     padding-top: 40px;
-    padding-bottom: 200px;
+    /*padding-bottom: 90px;*/
     font-size: 1.3rem;
     padding-right: 50px;
+    height: 80px;
   }
 
 }
@@ -302,6 +332,29 @@
 
 @media all and (min-width: 894px){
 
+  .circle1{
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    padding-right: none;
+    margin-left: 400px;
+    margin: 0 auto;
+    display: inherit;
+    margin-top: -420px;
+    border-radius: 50%;
+    width: 411px;
+    height: 411px;
+    z-index: 10;
+  }
+
+  .button{
+    visibility: hidden;
+  }
+
+  .circle1:hover{
+    background-color: rgba(33,33,33,0.6);
+  }
+
   .button{
     display: block;
     position: absolute;
@@ -346,7 +399,7 @@
 
     .aboutContent, .contactContent, .designsContent{
       height: 800px;
-      font-family: 'PT Sans Narrow', sans-serif;
+      font-family: 'futura-pt-condensed', sans-serif;
       font-size: 1.3rem;
       text-align: center;
       padding-top: 10px;
@@ -354,6 +407,11 @@
       margin: 0 auto;
     }
 
+    .designsContent{
+      width: 1266px;
+      margin-top: 13px;
+      height: 450px;
+    }
 
     .contactContent{
       height: 300px;

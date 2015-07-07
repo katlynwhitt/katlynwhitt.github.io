@@ -229,10 +229,14 @@ var FunctionTwo = function () {
   };
 
 $('.button').click(function(){
-  console.log('hey');
   $('.list').css('display','none');
   $('.button').css('display','none');
   $('.button-img').css('visibility','hidden');
   FunctionOne().done(FunctionTwo);
 
+});
+
+$('.circle1').hover(function(){
+  console.log('in circle function');
+  $('.button').css('visibility','visible');
 });
