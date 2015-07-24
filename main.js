@@ -1,7 +1,28 @@
 var r = $.Deferred();
 
-  $('.button').mouseenter(function(){
+  $('.circle1').mouseenter(function(){
     $('.button-img').css('visibility','visible');
+    $('.button').css('font-size','70px');
+    $('.button').css('margin-top','145px');
+    $('.button').css('margin-left','46px');
+  });
+
+  $('.circle1').mouseleave(function(){
+    $('.button-img').css('visibility','visible');
+    $('.button').css('visibility', 'hidden');
+  });
+
+  $('.screenshot-hover').mouseenter(function(){
+    $('.tbs-live').css('visibility','visible');
+    $('.tbs-live').css('position','absolute');
+    $('.tbs-live').css('margin-left','-670px');
+    $('.tbs-live').css('margin-top','80px');
+    $('.tbs-live').css('font-size','30px');
+    $('.tbs-live').css('display','block');
+  });
+
+  $('.screenshot-hover').mouseleave(function(){
+    $('.tbs-live').css('visibility', 'hidden');
   });
 
   // $('.button').mouseleave(function(){
@@ -236,7 +257,7 @@ $('.button').click(function(){
 
 });
 
-$('.circle1').hover(function(){
+$('.circle1').mouseover(function(){
   console.log('in circle function');
   $('.button').css('visibility','visible');
 });

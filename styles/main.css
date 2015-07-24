@@ -2,7 +2,6 @@
 
   body{
     margin: 0;
-
   }
 
   .button-img{
@@ -57,6 +56,8 @@
 
   #headerDesigner, #headerDeveloper, #headerDreamer{
     float:right;
+    color: #de5edc;
+    text-transform: uppercase;
   }
 
   .headerWrapper{
@@ -64,7 +65,7 @@
     padding-bottom: 5px;
     /* padding-top: 30px; */
     padding-right: 30px;
-    height: 50px;
+    height: 60px;
     background-color:rgba(33,33,33,0.9);
   }
 
@@ -72,10 +73,13 @@
     text-decoration: none;
     font-family: 'futura-pt-condensed';
     color: #cb654f;
+    color: #43b6d1;
+    color: #de5edc;
   }
 
   a:hover{
-    text-decoration: line-through;
+    color: #de5edc;
+    font-style: italic;
 
   }
 
@@ -110,7 +114,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
-    background-image: url('../../images/background-circle.png');
+    background-image: url('../../images/background.png');
     background-size:auto;
     background-position: top;
     margin-top: -14px;
@@ -137,7 +141,7 @@
     top: 13px;
     margin: 0 auto;
     height: 50px;
-    color: #d2b612;
+    color: black;
   }
 
   .designs-header, .contact-header, .about-header{
@@ -156,7 +160,7 @@
   }
 
   .aboutContent, .contactContent, .designsContent{
-    height: 800px;
+    height: 500px;
     font-family: 'futura-pt-condensed', sans-serif;
     font-size: 1.3rem;
     text-align: center;
@@ -210,7 +214,7 @@
   }
 
   .designsContent{
-    background-color:#8cbea3;
+    /*background-color:#8cbea3;*/
   }
 
   .footer{
@@ -257,6 +261,7 @@
 
   .name{
     margin-top: -3px;
+    padding-top: 5px;
   }
 }
 
@@ -277,6 +282,10 @@
     float: right;
     padding-left: 15px;
     font-size: 1.2rem;
+    color:#f6f4ce;
+    text-transform: uppercase;
+    padding-top: 10px;
+    color: #de5edc;
   }
 
   #headerDesigner{
@@ -398,7 +407,7 @@
     }
 
     .aboutContent, .contactContent, .designsContent{
-      height: 800px;
+      height: 550px;
       font-family: 'futura-pt-condensed', sans-serif;
       font-size: 1.3rem;
       text-align: center;
@@ -474,14 +483,26 @@
       display: inline;
       position: relative;
       top: -420px;
-      left: -270px;
+      left: -252px;
+      font-size: 25px;
+      color: black;
+    }
+
+    a.contact:hover{
+      /*color:#35478C;*/
     }
 
     .about{
       display: inline;
       position: relative;
-      top: -70px;
-      left: 234px;
+      top: -74px;
+      left: 224px;
+      font-size: 25px;
+      color: black;
+    }
+
+    a.about:hover{
+      color:#E8B315;
     }
 
     .hiddenAbout{
@@ -497,22 +518,34 @@
       position: relative;
       top: -55px;
       left: -388px;
+      font-size: 25px;
+      color: black;
+    }
+
+    a.myDesigns:hover{
+      color:#43b6d1;
     }
 
     .hiddenBlog{
       display:none;
     }
 
+    a.blog:hover{
+      color:#850062;
+    }
+
     .blog{
       display: inline;
       position: relative;
       top: -265px;
-      left: 230px;
+      left: 220px;
+      font-size: 25px;
+      color: black;
     }
 
-    .k1:hover{
-      box-shadow: 5px 10px 10px #d2b612;
-    }
+    /*.k1:hover{
+      box-shadow: 5px 10px 10px #de5edc;
+    }*/
 
     .k2{
       padding-top: 27px;
@@ -557,6 +590,54 @@
       background-color: #d2b612;
     }
 
+    .screenshot{
+      width: 400px;
+      position: relative;
+      float: left;
+      margin-top: 60px;
+      margin-left: 40px;
+    }
+
+    a.screenshot-hover{
+      width: 400px;
+      height: 206px;
+      margin-top: 60px;
+      margin-left: -812px;
+      background-color: rgba(33,33,33,0.6);
+      position: absolute;
+      font-size:25px;
+    }
+
+    .screenshot-hover:hover{
+      background-color: rgba(33,33,33,0.2);
+    }
+
+    .screenshot2{
+      width: 400px;
+      height: 206px;
+      position: relative;
+      float: left;
+      margin-top: 60px;
+      margin-left: 100px;
+    }
+
+    .screenshot2-hover{
+      width: 400px;
+      height: 206px;
+      margin-top: 60px;
+      margin-left: -563px;
+      background-color: rgba(33,33,33,0.8);
+      position: absolute;
+      font-size: 25px;
+    }
+
+    .screenshot2-hover:hover{
+      background-color: rgba(33,33,33,0.2);
+    }
+
+      /*a.tbs-live{
+        visibility:hidden;
+      }*/
 
 
   /*-------*/
