@@ -265,3 +265,17 @@ $('.circle1').mouseover(function(){
   console.log('in circle function');
   $('.button').css('visibility','visible');
 });
+
+
+$(function () {
+
+$('a[href^="#"]').click(function(event) {
+var id = $(this).attr("href");
+var offset = 20;
+var target = $(id).offset().top - offset;
+
+$('html, body').animate({scrollTop:target}, 500);
+event.preventDefault();
+});
+
+});
