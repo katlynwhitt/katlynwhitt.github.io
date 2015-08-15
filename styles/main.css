@@ -1,5 +1,89 @@
 @media all and (min-width: 100px){
 
+  .copy-screenshot{
+    width: 490px;
+    height: 245px;
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    margin-left: 120px;
+    background-image: url('../images/content-samples.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    border: solid gray 1px;
+  }
+
+  .project-container{
+    float:left;
+  }
+
+  .links-title{
+    margin-top: 100px;
+    padding-bottom: 12px;
+    font-size: 30px;
+  }
+
+.copy-screenshot:hover{
+  border: solid black 2px;
+}
+
+  .project2-container{
+    float:left;
+  }
+
+  .jot-description{
+    margin-left: 100px;
+  }
+
+
+
+  a.screenshot-hover{
+    width: 400px;
+    height: 206px;
+    margin-top: 60px;
+    margin-left: -812px;
+    background-color: rgba(33,33,33,0.6);
+    position: absolute;
+    font-size:25px;
+  }
+
+  .screenshot-hover:hover{
+    background-color: rgba(33,33,33,0.2);
+  }
+
+  .jot-description{
+    font-family: "futura-pt-condensed",'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+  }
+
+  .screenshot2{
+    width: 490px;
+    height: 245px;
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    background-image: url('../images/jot-screenshot.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+
+  /*.screenshot2-hover{
+    width: 400px;
+    height: 206px;
+    margin-top: 60px;
+    margin-left: -563px;
+    background-color: rgba(33,33,33,0.8);
+    position: absolute;
+    font-size: 25px;
+  }
+
+  .screenshot2-hover:hover{
+    background-color: rgba(33,33,33,0.2);
+  }*/
+
   body{
     margin: 0;
   }
@@ -50,7 +134,8 @@
      font-weight: normal;
      line-height: 34pt;
      text-transform: uppercase;
-     font-family: "futura-pt-condensed";
+     font-family: "futura-pt-condensed", 'Arial Narrow', Arial, sans-serif;
+     /*font-family: 'Arial Narrow', Arial, sans-serif;*/
     /*padding-left: 10px;*/
   }
 
@@ -71,7 +156,7 @@
 
   a{
     text-decoration: none;
-    font-family: 'futura-pt-condensed';
+    font-family: 'futura-pt-condensed','Arial Narrow', Arial, sans-serif;
     color: #cb654f;
     color: #43b6d1;
     color: #de5edc;
@@ -84,8 +169,8 @@
   }
 
   .headshot{
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 100%;
+    max-width: 100%;
     position: relative;
     padding-right: none;
     margin: 0 auto;
@@ -114,17 +199,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
-    background-image: url('../../images/background.png');
+    background-image: url('../../images/port-background.jpg');
     background-size:auto;
     background-position: top;
     margin-top: -14px;
+    background-size: contain;
     /*background-color: #ddecdf;*/
   }
 
   a#developer, a#dreamer, a#designer{
     margin: 0 auto;
     display: block;
-    font-family: "futura-pt-condensed";
+    font-family: "futura-pt-condensed",'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
     padding-top: 12px;
   }
@@ -133,8 +219,8 @@
     color:gray;
   }
 
-  .designs-header, .contact-header, .about-header{
-    font-family: 'futura-pt-condensed', sans-serif;
+  .designs-header, .contact-header, .about-header, .devHeader{
+    font-family: 'futura-pt-condensed','Arial Narrow', Arial, sans-serif;
     clear: both;
     max-height: 100%;
     max-width: 100%;
@@ -144,7 +230,7 @@
     color: black;
   }
 
-  .designs-header, .contact-header, .about-header{
+  .designs-header, .contact-header, .about-header, .devHeader{
     padding-top: 30px;
     position:relative;
     text-align: center;
@@ -161,7 +247,7 @@
 
   .aboutContent, .contactContent, .designsContent{
     height: 500px;
-    font-family: 'futura-pt-condensed', sans-serif;
+    font-family: 'futura-pt-condensed','Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
     text-align: center;
     padding-top: 40px;
@@ -227,7 +313,7 @@
   }
 
   .built-by{
-    font-family: 'futura-pt-condensed', sans-serif;
+    font-family: 'futura-pt-condensed','Arial Narrow', Arial, sans-serif;
     color: black;
     float:right;
     padding-top: 40px;
@@ -245,7 +331,7 @@
     padding-top: 20px;
   }
 
-  .designs-header, .contact-header, .about-header {
+  .designs-header, .contact-header, .about-header, .devHeader {
     font-size: 2rem;
     height:70px;
   }
@@ -306,7 +392,7 @@
     /*padding-top:41px;*/
   }
 
-  .designs-header, .contact-header, .about-header{
+  .designs-header, .contact-header, .about-header, .devHeader{
     font-size: 2rem;
     height: 100px;
     padding-top: 50px;
@@ -397,7 +483,7 @@
       font-size: 2.1rem;
     }
 
-    .designs-header, .contact-header, .about-header{
+    .designs-header, .contact-header, .about-header, .devHeader{
       font-size: 3rem;
       padding-top: 50px;
       position:relative;
@@ -408,7 +494,7 @@
 
     .aboutContent, .contactContent, .designsContent{
       height: 550px;
-      font-family: 'futura-pt-condensed', sans-serif;
+      font-family: 'futura-pt-condensed','Arial Narrow', Arial, sans-serif;
       font-size: 1.3rem;
       text-align: center;
       padding-top: 10px;
@@ -590,50 +676,7 @@
       background-color: #d2b612;
     }
 
-    .screenshot{
-      width: 400px;
-      position: relative;
-      float: left;
-      margin-top: 60px;
-      margin-left: 40px;
-    }
 
-    a.screenshot-hover{
-      width: 400px;
-      height: 206px;
-      margin-top: 60px;
-      margin-left: -812px;
-      background-color: rgba(33,33,33,0.6);
-      position: absolute;
-      font-size:25px;
-    }
-
-    .screenshot-hover:hover{
-      background-color: rgba(33,33,33,0.2);
-    }
-
-    .screenshot2{
-      width: 400px;
-      height: 206px;
-      position: relative;
-      float: left;
-      margin-top: 60px;
-      margin-left: 100px;
-    }
-
-    .screenshot2-hover{
-      width: 400px;
-      height: 206px;
-      margin-top: 60px;
-      margin-left: -563px;
-      background-color: rgba(33,33,33,0.8);
-      position: absolute;
-      font-size: 25px;
-    }
-
-    .screenshot2-hover:hover{
-      background-color: rgba(33,33,33,0.2);
-    }
 
       /*a.tbs-live{
         visibility:hidden;

@@ -12,18 +12,22 @@ var r = $.Deferred();
     $('.button').css('visibility', 'hidden');
   });
 
-  $('.screenshot-hover').mouseenter(function(){
-    $('.tbs-live').css('visibility','visible');
-    $('.tbs-live').css('position','absolute');
-    $('.tbs-live').css('margin-left','-670px');
-    $('.tbs-live').css('margin-top','80px');
-    $('.tbs-live').css('font-size','30px');
-    $('.tbs-live').css('display','block');
-  });
+  // $('.screenshot-hover').mouseenter(function(){
+  //   $('.screenshot-hover').css('visibility','visible');
+  // });
+  //
+  // $('.screenshot-hover').mouseleave(function(){
+  //   $('.screenshot-hover').css('visibility', 'hidden');
+  // });
+  //
+  // $('.screenshot-hover2').mouseenter(function(){
+  //   $('.screenshot-hover2').css('visibility','visible');
+  // });
+  //
+  // $('.screenshot-hover2').mouseleave(function(){
+  //   $('.screenshot-hover2').css('visibility', 'hidden');
+  // });
 
-  $('.screenshot-hover').mouseleave(function(){
-    $('.tbs-live').css('visibility', 'hidden');
-  });
 
   // $('.button').mouseleave(function(){
   //   $('.button-img').css('visibility','hidden');
