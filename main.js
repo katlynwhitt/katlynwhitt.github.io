@@ -12,40 +12,7 @@ var r = $.Deferred();
     $('.button').css('visibility', 'hidden');
   });
 
-  // $('.screenshot-hover').mouseenter(function(){
-  //   $('.screenshot-hover').css('visibility','visible');
-  // });
-  //
-  // $('.screenshot-hover').mouseleave(function(){
-  //   $('.screenshot-hover').css('visibility', 'hidden');
-  // });
-  //
-  // $('.screenshot-hover2').mouseenter(function(){
-  //   $('.screenshot-hover2').css('visibility','visible');
-  // });
-  //
-  // $('.screenshot-hover2').mouseleave(function(){
-  //   $('.screenshot-hover2').css('visibility', 'hidden');
-  // });
-
-
-  // $('.button').mouseleave(function(){
-  //   $('.button-img').css('visibility','hidden');
-  // });
-
-// var button = $('.button');
-
-// $('.button').mouseenter(function(){
-//   $( ".button" ).html( "<a class='button2><img class='button' src='../images/Bang2.png'></a>" );
-// });
-//
-// $('.button2').mouseleave(function(){
-//   $( ".button2" ).html( "<a class='button'><img class='button' src='../images/Bang.png'></a>" );
-// });
-
 var FunctionOne = function () {
-  // create a deferred object
-  // var r = $.Deferred();
 
   console.log('in Function 1');
 
@@ -132,14 +99,11 @@ var FunctionOne = function () {
 
   animation();
 
-  // do whatever you want (e.g. ajax/animations other asyc tasks)
-
   setTimeout(function () {
-    // and call `resolve` on the deferred object, once you're done
+
     r.resolve();
   }, 1400);
 
-  // return the deferred object
   return r;
 };
 
@@ -269,13 +233,13 @@ $('.circle1').mouseover(function(){
 
 $(function () {
 
-$('a[href^="#"]').click(function(event) {
-var id = $(this).attr("href");
-var offset = 20;
-var target = $(id).offset().top - offset;
+  $('a[href^="#"]').click(function(event) {
+  var id = $(this).attr("href");
+  var offset = 20;
+  var target = $(id).offset().top - offset;
 
-$('html, body').animate({scrollTop:target}, 500);
-event.preventDefault();
-});
+    $('html, body').animate({scrollTop:target}, 500);
+    event.preventDefault();
+  });
 
 });

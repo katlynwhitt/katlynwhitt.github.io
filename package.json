@@ -1,9 +1,8 @@
 {
-    "name": "Portfolio",
-    "version": "0.0.1",
-    "scripts": {
-        "gulp": "gulp",
-        "minify": "gulp minify",
-        "serve":"gulp serve"
-    }
+  "name": "Portfolio",
+  "version": "0.0.0",
+  "dependencies": {
+    "gulp": "gulp",
+    "serve": "gulp serve"
+  }
 }

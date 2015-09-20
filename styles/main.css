@@ -1,12 +1,119 @@
 @media all and (min-width: 100px){
 
+  .description{
+    height: 300px;
+  }
+
+  .myname{
+    padding-top: 100px;
+  }
+
+  .mydescription{
+    padding-top: 8px;
+  }
+
+  .about-text-2{
+    width: 100px;
+    font-size: 4px;
+  }
+
+  .contact-me-2{
+    text-align: center;
+  }
+
+  .approach{
+    width: 240px;
+    padding-left: 40px;
+    padding-top: 30px;
+    line-height: 23px;
+  }
+
+  a.contact-me-2{
+    text-align: center;
+  }
+
+  div.contact-header{
+    color: white;
+  }
+
+  .katlyn{
+    display:none;
+  }
+
+  a.blogger{
+    color: #DFB6BD;
+  }
+
+  div{
+    font-family: "futura-pt-condensed",'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+  }
+
+  div.description{
+    background-image: url('../images/swirl.jpg');
+    background-size: cover;
+  }
+
+  .myname{
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: rgba(223,182,189,0.9);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+  }
+
+  .mydescription{
+    text-align: center;
+  }
+
+  .desc-link{
+    animation-name: fadein;
+    animation-duration: 2.5s;
+    color: rgba(255,255,255,0.7);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+  }
+
+  @keyframes fadein {
+    from{
+      /*color:rgba(33,33,33,0.1);*/
+      color: rgba(223,182,189,0.0);
+    }
+
+    to {
+      color: rgba(223,182,189,0.9);
+    }
+  }
+
+  .contactMe{
+    background-image: url('../images/swirl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: bottom;
+  }
+
+  .github{
+    float:left;
+    font-size: 1.3rem;
+    display:block;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .approach{
+    color: white;
+  }
+
   .copy-screenshot{
-    width: 490px;
+    width: 390px;
     height: 245px;
     position: relative;
     float: left;
     margin-top: 60px;
-    margin-left: 120px;
+    /*margin-left: 10px;*/
     background-image: url('../images/content-samples.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,80 +126,88 @@
   }
 
   .links-title{
-    margin-top: 100px;
     padding-bottom: 12px;
     font-size: 30px;
+    float:left;
+    clear:both;
+    margin-left: 30px;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
   }
 
-.copy-screenshot:hover{
+  .blog-links{
+    float:left;
+    clear:both;
+    margin-left: 30px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+/*.copy-screenshot:hover{
   border: solid black 2px;
-}
+}*/
 
   .project2-container{
     float:left;
   }
 
-  .jot-description{
+  /*.jot-description{
     margin-left: 100px;
-  }
+  }*/
 
-
-
-  a.screenshot-hover{
-    width: 400px;
-    height: 206px;
-    margin-top: 60px;
-    margin-left: -812px;
-    background-color: rgba(33,33,33,0.6);
-    position: absolute;
-    font-size:25px;
-  }
-
-  .screenshot-hover:hover{
+  /*.screenshot-hover:hover{
     background-color: rgba(33,33,33,0.2);
-  }
+  }*/
 
-  .jot-description{
+  .jot-description, .game-description, .SurfandPaddle-description{
     font-family: "futura-pt-condensed",'Arial Narrow', Arial, sans-serif;
     font-size: 1.3rem;
+    float:left;
+    clear:both;
+    margin-left: 50px;
   }
 
   .screenshot2{
-    width: 490px;
+    width: 390px;
     height: 245px;
     position: relative;
     float: left;
     margin-top: 60px;
-    margin-left: 100px;
+    margin-left:0px;
     padding-bottom: 20px;
     background-image: url('../images/jot-screenshot.png');
     background-size:contain;
     background-repeat: no-repeat;
   }
 
-  /*.screenshot2-hover{
-    width: 400px;
-    height: 206px;
-    margin-top: 60px;
-    margin-left: -563px;
-    background-color: rgba(33,33,33,0.8);
-    position: absolute;
-    font-size: 25px;
-  }
-
-  .screenshot2-hover:hover{
-    background-color: rgba(33,33,33,0.2);
-  }*/
-
   .screenshot3{
-    width: 490px;
+    width: 390px;
     height: 245px;
     position: relative;
     float: left;
     margin-top: 60px;
     margin-left: 100px;
-    padding-bottom: 20px;
+    margin-left:0px;
+    padding-bottom: 10px;
     background-image: url('../images/tiygame-screenshot.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+
+  .screenshot4{
+    width: 390px;
+    height: 245px;
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-left:0px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    background-image: url('../images/SurfandPaddle-screenshot.png');
     background-size:contain;
     background-repeat: no-repeat;
   }
@@ -109,8 +224,15 @@
   }
 
   .twitterLink, .email, .pinterest-link{
-    display:block;
+    display: block;
     padding-top: 20px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #DFB6BD;
+  }
+
+  .email{
+    padding-top: 0px;
   }
 
   .mobile-logo{
@@ -119,14 +241,11 @@
     max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
+    display: none;
   }
 
   .button{
     display: none;
-  }
-
-  .logo{
-    display:none;
   }
 
   .header{
@@ -165,20 +284,17 @@
     padding-right: 30px;
     height: 60px;
     background-color:rgba(33,33,33,0.9);
+    display:none;
   }
 
   a{
     text-decoration: none;
-    font-family: 'futura-pt-condensed','Arial Narrow', Arial, sans-serif;
-    color: #cb654f;
-    color: #43b6d1;
-    color: #de5edc;
+    font-family: "futura-pt-condensed",'Arial Narrow', Arial, sans-serif;
+    color: black;
   }
 
   a:hover{
-    color: #de5edc;
-    font-style: italic;
-
+    color: black;
   }
 
   .headshot{
@@ -189,6 +305,7 @@
     margin: 0 auto;
     display: inherit;
     padding-top: 30px;
+    display: none;
 
   }
 
@@ -212,11 +329,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
-    background-image: url('../../images/port-background.jpg');
+    /*background-image: url('../images/port-background.jpg');
     background-size:auto;
-    background-position: top;
+    background-position: top;*/
     margin-top: -14px;
-    background-size: contain;
+    background-size: cover;
     /*background-color: #ddecdf;*/
   }
 
@@ -246,16 +363,16 @@
   .designs-header, .contact-header, .about-header, .devHeader{
     padding-top: 30px;
     position:relative;
-    text-align: center;
+    margin-left: 100px;
 
   /*background*/
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    /*background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     -webkit-background-size: 3px 3px;
     -moz-background-size: 3px 3px;
-    background-size: 3px 3px;
+    background-size: 3px 3px;*/
   }
 
   .aboutContent, .contactContent, .designsContent{
@@ -264,6 +381,7 @@
     font-size: 1.3rem;
     text-align: center;
     padding-top: 40px;
+    line-height: 25px;
   }
 
   .contactContent{
@@ -278,12 +396,16 @@
   .about-text-2{
     width: 300px;
     margin: 0 auto;
-    padding-top: 270px;
+    padding-top: 140px;
+    font-size: 23px;
+    width: 800px;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
   .leftBrain, .rightBrain{
-    width: 50px;
+    width: 40px;
     padding-top: 10px;
+
   }
 
   .leftBrainContent-Title, .rightBrainContent-Title{
@@ -291,10 +413,12 @@
   }
 
   .leftBrainContent, .rightBrainContent{
-    font-size: .5rem;
+    font-size: 10px;
     height: 150px;
     width: 100px;
     float: left;
+    padding-top: 20px;
+    margin-top: -80px;
   }
 
   .rightBrainContent{
@@ -307,13 +431,11 @@
 
   a.contact-me-2{
     display: block;
-    width: 100px;
+    width: 300px;
     margin: 0 auto;
     margin-top: 15px;
-  }
-
-  .designsContent{
-    /*background-color:#8cbea3;*/
+    color: #DFB6BD;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
   .footer{
@@ -339,6 +461,42 @@
 }
 
 @media all and (min-width: 239px){
+
+  .description{
+    height: 300px;
+  }
+
+  .myname{
+    padding-top: 100px;
+  }
+
+  .mydescription{
+    padding-top: 8px;
+  }
+
+  .about-text-2{
+    width: 230px;
+  }
+
+  .contact-me-2{
+    text-align: center;
+  }
+
+  .approach{
+    width: 240px;
+    padding-left: 40px;
+    padding-top: 30px;
+    line-height: 23px;
+  }
+
+  a.contact-me-2{
+    text-align: center;
+  }
+
+  .description{
+    height: 700px;
+  }
+
   .skills{
     display:block;
     padding-top: 20px;
@@ -349,10 +507,46 @@
     height:70px;
   }
 
+  img.leftBrain, img.rightBrain{
+    width: 50px;
+  }
+
 }
 
 
 @media all and (min-width: 281px){
+
+  .description{
+    height: 300px;
+  }
+
+  .myname{
+    padding-top: 100px;
+  }
+
+  .mydescription{
+    padding-top: 8px;
+  }
+
+  .about-text-2{
+    width: 230px;
+  }
+
+  .contact-me-2{
+    text-align: center;
+  }
+
+  .approach{
+    width: 240px;
+    padding-left: 40px;
+    padding-top: 30px;
+    line-height: 23px;
+  }
+
+  a.contact-me-2{
+    text-align: center;
+  }
+
   .leftBrain, .rightBrain{
     padding-top: 30px;
     width: 100px;
@@ -362,14 +556,46 @@
     margin-top: -3px;
     padding-top: 5px;
   }
+
+  img.leftBrain, img.rightBrain{
+    width: 50px;
+  }
 }
 
 
 @media all and (min-width: 401px){
 
+  .description{
+    height: 500px;
+  }
+
+  .myname{
+    padding-top: 200px;
+  }
+
+  .about-text-2{
+    width: 300px;
+  }
+
+  .approach{
+    width: 230px;
+    padding-top: 70px;
+    padding-left: 40px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .aboutContent{
+    height: 580px;
+  }
+
   .brain{
     padding-top: 10px;
     max-width: 100%;
+  }
+
+  img.leftBrain, img.rightBrain{
+    width: 100px;
   }
 
   .aboutText{
@@ -418,6 +644,34 @@
 }
 
 @media all and (min-width: 505px){
+
+  .description{
+    height: 500px;
+  }
+
+  .myname{
+    padding-top: 200px;
+    font-size: 40px;
+  }
+
+  .mydescription{
+    padding-top: 5px;
+    font-size: 17px;
+  }
+
+  .about-text-2{
+    width: 300px;
+    padding-top: 230px;
+  }
+
+  .approach{
+    width: 400px;
+    font-size: 18px;
+    padding-top: 100px;
+    margin-left: 30px;
+    line-height: 28px;
+  }
+
   .rightBrainContent{
     padding-right: 30px;
   }
@@ -428,6 +682,24 @@
 }
 
 @media all and (min-width: 608px){
+
+  .contact-header{
+    padding-left: 40px;
+  }
+
+  .approach{
+    width: 450px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 40px;
+    padding-top: 140px;
+  }
+
+  .about-text-2{
+    width: 500px;
+    }
+
   .rightBrainContent{
     padding-right: 80px;
   }
@@ -439,6 +711,75 @@
 }
 
 @media all and (min-width: 894px){
+
+  .description{
+    height: 900px;
+  }
+
+  .myname{
+    font-size: 50px;
+  }
+
+  .contact-header{
+    padding-left: 100px;
+  }
+
+  .mydescription{
+    font-size: 19px;
+    padding-top: 10px;
+  }
+
+  .about-text-2{
+    margin-top: 200px;
+    padding-top: 60px;
+    font-size: 19px;
+  }
+
+  .approach{
+    width: 800px;
+    padding-top: 150px;
+    padding-left: 100px;
+  }
+
+  .aboutWrapper{
+    height: 510px;
+  }
+
+  .links-title {
+    margin-top: -300px;
+    padding-bottom: 12px;
+    font-size: 30px;
+    float: right;
+    margin-right: 320px;
+    max-width: 100%;
+}
+
+  .blog-links {
+    float: right;
+    clear: both;
+    margin-right: 320px;
+    width: 400px;
+    text-align: center;
+    /* margin: 0 auto; */
+    max-width: 100%;
+    margin-top: -220px;
+  }
+
+  .description{
+    height: 800px;
+    background-attachment: fixed;
+  }
+
+  .copy-screenshot{
+    width: 390px;
+    height: 245px;
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    margin-left: 140px;
+    padding-bottom: 20px;
+    border: solid gray 1px;
+}
 
   .circle1{
     max-height: 100%;
@@ -453,6 +794,7 @@
     width: 411px;
     height: 411px;
     z-index: 10;
+    display: none;
   }
 
   .button{
@@ -498,10 +840,10 @@
 
     .designs-header, .contact-header, .about-header, .devHeader{
       font-size: 3rem;
-      padding-top: 50px;
+      padding-top: 20px;
       position:relative;
-      text-align: center;
       padding-bottom: 40px;
+      color: white;
       /*height: 100px;*/
     }
 
@@ -535,7 +877,7 @@
     }
 
     .leftBrainContent{
-      /*padding-top: 40px;*/
+      padding-top: 40px;
       width: 300px;
       float:left;
       /*position: absolute;*/
@@ -545,7 +887,7 @@
     }
 
     .rightBrainContent{
-      /*padding-top: 40px;*/
+      padding-top: 40px;
       width: 300px;
       float:right;
       /*position: absolute;*/
@@ -572,6 +914,7 @@
       float:left;
       position: relative;
       right: -20%;
+      display:none;
     }
 
     .hiddenContact{
@@ -688,9 +1031,46 @@
     .bang{
       background-color: #d2b612;
     }
+    .screenshot2{
+      width: 490px;
+      height: 245px;
+      position: relative;
+      float: left;
+      margin-top: 60px;
+      margin-left: 100px;
+      padding-bottom: 20px;
+      background-image: url('../images/jot-screenshot.png');
+      background-size:contain;
+      background-repeat: no-repeat;
+    }
 
+    .screenshot3{
+      width: 490px;
+      height: 245px;
+      position: relative;
+      float: left;
+      clear:both;
+      margin-top: 60px;
+      margin-left: 100px;
+      padding-bottom: 20px;
+      background-image: url('../images/tiygame-screenshot.png');
+      background-size:contain;
+      background-repeat: no-repeat;
+    }
 
-
+    .screenshot4{
+      width: 490px;
+      height: 245px;
+      position: relative;
+      float: left;
+      clear:both;
+      margin-top: 60px;
+      margin-left: 100px;
+      padding-bottom: 20px;
+      background-image: url('../images/SurfandPaddle-screenshot.png');
+      background-size:contain;
+      background-repeat: no-repeat;
+    }
       /*a.tbs-live{
         visibility:hidden;
       }*/
